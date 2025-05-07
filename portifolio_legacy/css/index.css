@@ -94,7 +94,7 @@ nav ul li:hover{
     margin: 0;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 90%;
 }
 
 .first-content img {
@@ -347,13 +347,30 @@ nav ul li:hover{
     transition: all 0.3s;
 }
 
+
+.websites .preview1 {
+    width: 300px;
+    height: 350px;  
+    display: flex;
+    justify-content: center;
+    background-color: #967b23;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.websites .preview1:hover {
+    transform: scale(1.02);
+}
+
+
 .websites .preview:hover {
     transform: scale(1.02);
 }
 
 
 .websites .preview img{
-    width: 250px;
+    width: 280px;
     height: 352px;
 }
 
@@ -389,7 +406,7 @@ footer {
 }
 
 .nav-legacy h1{
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     margin-bottom: 20%;
 }
@@ -407,6 +424,7 @@ footer {
     color: inherit;
     color: #b1b1b1;
     font-weight: 200;
+    font-size: 12px;
 }
 
 .nav-legacy-contatos {
@@ -414,7 +432,7 @@ footer {
 }
 
 .nav-legacy-contatos h1{
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     margin-bottom: 20%;
 }
@@ -432,4 +450,5 @@ footer {
     color: inherit;
     color: #b1b1b1;
     font-weight: 200;
+    font-size: 12px;
 }

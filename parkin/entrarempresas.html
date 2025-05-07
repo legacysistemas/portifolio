@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/parkin/css/reset.css">
+  <link rel="stylesheet" href="/parkin/css/entrar-empresas.css">
+  <link rel="shortcut icon" href="/parkin/media/logo2.png">
+  <title>Parkin</title>
+</head>
+<body>
+  <main>
+    <div class="centro">
+      <div class="conteudo-esq">
+        <div class="titulo-esq">
+          <h1>Entrar</h1>
+          <p>Seu lugar é aqui. Fácil e rápido!</p>
+          <button class="saibamais" href="/">Saiba Mais</button>
+        </div>
+        <img class="detalhes-img" src="/parkin/media/detalhes.png">
+      </div>
+      <div class="conteudo-dir">
+        <div class="titulo-cliente">
+          <h1>Estacionamento</h1>
+        </div>
+        <div class="login-dir">
+          <form action="{% url 'empresas:entrarempresa' %}" method="post">
+            <div class="login">
+              <div class="titulos">
+                <h1>Entrar</h1>
+                <p>Bem vindo de volta!</p>
+              </div>
+                  <div class="import1">
+                    <img src="/parkin/media/email.svg" class="email-img">
+                    <div class="form">
+                      <input type="email" name="email" placeholder="E-mail" id="email " style="margin-left: 5px; margin-right:5px">
+                    </div>
+                  </div>
+                <div class="import3">
+                  <img src="/parkin/media/senha.svg" class="senha-img">
+                  <div class="form" style="margin:0">
+                    <input type="password" name="senha" placeholder="Senha" id="senha" style="margin-left: 5px; margin-right:5px; width:140px">
+                  </div>
+                </div>
+              <div class="botao">
+                <input type="submit" value="Entrar" id="button">
+                <div class="entrar">
+                  <p>Não possui uma conta?</p>
+                  <a href="/parkin/cadasempresa.html">Cadastrar-se</a>
+                </div>
+              </div>
+              <div class="botoes">
+                <div class="b-estacionamento">
+                  <a href="/parkin/entrarclientes.html" class="ativo">Cliente</a>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    function togglePasswordVisibility() {
+      var senhaInput = document.getElementById("senha");
+      var eyeIcon = document.getElementById("eye-icon");
+
+      if (senhaInput.type === "password") {
+        senhaInput.type = "text";
+        eyeIcon.src = "{% static 'assets/img/visivel.png' %}";
+      } else {
+        senhaInput.type = "password";
+        eyeIcon.src = "{% static 'assets/img/olho.png' %}";
+      }
+
+      senhaInput.focus();
+    }
+  </script>
+</body>
+
+</html>
