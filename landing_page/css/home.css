@@ -202,7 +202,8 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 280px;
+    justify-content: center;
+    width: 200px;
     height: 360px;
     background-color: var(--bg-white);
     border-radius: 30px;
