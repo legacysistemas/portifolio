@@ -65,13 +65,25 @@ header {
 }
 
 .button-free {
+    display: none;
+}
+
+.graphics-desktop {
+    display: none;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+.button-free-mobile {
     display: flex;
     justify-content: center;
     margin-top: 29px;
     padding: 0 20px;
 }
 
-.button-free button{
+.button-free-mobile button{
     width: 100%;
     height: 50px;
     font-size: 1rem;
@@ -285,3 +297,198 @@ header {
 .icons-footer img{
     margin-left: 50px;
 }
+
+/* ============== DESKTOP (min-width: 1024px) ============== */
+@media (min-width: 1024px) {
+    /* Header */
+    header {
+      height: 60px;
+      padding: 0 15%;
+      box-shadow: none;
+    }
+    
+    .graphics-desktop {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .button-free-mobile {
+        display: none;
+    }
+
+
+    .graphics-mobile{
+        display: none;
+    }
+
+    .button-free {
+        display: block;
+    }
+
+    .button-free button{
+        width: 100%;
+        height: 50px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--primary-font-color);
+        background-color: var(--pink-color);
+        border-radius: 68px;
+        border: none;
+    }
+
+    header .desktop-menu{
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        height: 60px;
+        padding: 0 15%;
+      }
+
+      header .desktop-menu a{
+        color: var(--primary-font-color);
+        text-decoration: none;
+      }
+  
+    header svg {
+      display: none; /* Esconde menu mobile */
+    }
+  
+    /* Adicione esta classe no HTML da logo (substitua a img atual) */
+    .logo-desktop {
+      content: url('media/logo-desktop.png'); /* Atualize com o caminho correto */
+      width: 150px;
+    }
+  
+    /* Hero Section */
+    .first-content {
+      height: 700px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+      display: flex;
+      align-items: center;
+      padding: 0 15%;
+    }
+
+    .second-content {
+        padding: 0 15%;
+    }
+  
+    .graphics-image {
+      order: 2;
+      flex: 1;
+    }
+  
+    .graphics-image img {
+      width: 550px;
+      margin-top: 0;
+    }
+  
+    .primary-text {
+      flex: 1;
+      padding: 0;
+      gap: 30px;
+    }
+  
+    .primary-text h1 {
+      font-size: 40px;
+    }
+  
+    .primary-text p {
+      font-size: 18px;
+      max-width: 450px;
+    }
+  
+    .button-free {
+      justify-content: flex-start;
+      margin-top: 40px;
+      padding: 0;
+    }
+  
+    .button-free button {
+      width: 200px;
+      font-size: 16px;
+    }
+  
+    /* Fake Border */
+    .fake-border {
+      height: 700px;
+      top: 75px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+    }
+  
+    /* Seção Diferenciais */
+    .third-content {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 15%;
+      margin-top: 120px;
+      gap: 30px;
+    }
+  
+    .flex-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 300px;
+    }
+  
+    .icons img {
+      width: 80px;
+    }
+  
+    /* Seções Fourth Content (alternância imagem/texto) */
+    .fourth-content {
+      flex-direction: row;
+      align-items: center;
+      padding: 0 15%;
+      margin-top: 120px;
+      gap: 60px;
+    }
+  
+    .fourth-content:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .last-content {
+        padding: 0 15%;
+    }
+  
+    .secondary-text {
+      flex: 1;
+    }
+  
+    .alert-icon {
+      flex: 1;
+    }
+  
+    .alert-icon img {
+      width: 450px;
+    }
+  
+    /* Seção Planos */
+    .plans {
+      overflow-x: visible;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+  
+    .cards {
+      width: 280px;
+      height: 400px;
+      margin: 0;
+    }
+
+    .footer-content {
+        margin-top: 50px;
+    }
+  
+    /* Footer */
+    .footer-line {
+        padding: 0 15%;
+    }
+  
+    .icons-footer img {
+      margin-left: 30px;
+    }
+  }
