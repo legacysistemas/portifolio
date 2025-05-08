@@ -116,11 +116,11 @@
                     </div>
                     <div class="cards">
                         <div class="head-line">
-                            <h1>Bronze</h1>
-                            <p>5 Usuários</p>
+                            <h1>Prata</h1>
+                            <p>15 Usuários</p>
                         </div>
                         <div class="price">
-                            <h1><span>R$</span>99</h1>
+                            <h1><span>R$</span>129</h1>
                             <p>Por mês</p>
                         </div>
                         <div class="button-plan">
@@ -129,11 +129,11 @@
                     </div>
                     <div class="cards">
                         <div class="head-line">
-                            <h1>Bronze</h1>
-                            <p>5 Usuários</p>
+                            <h1>Ouro</h1>
+                            <p>50 Usuários</p>
                         </div>
                         <div class="price">
-                            <h1><span>R$</span>99</h1>
+                            <h1><span>R$</span>199</h1>
                             <p>Por mês</p>
                         </div>
                         <div class="button-plan">
@@ -141,8 +141,25 @@
                         </div>
                     </div>
                 </div>
+                <div class="footer-content">
+                    <div class="footer-line">
+                        <div class="logo-footer">
+                            <img src="media/logo-mobile.png" alt="">
+                        </div>
+                        <div class="icons-footer">
+                            <img src="media/facebook.svg" alt="">
+                            <img src="media/instagram.svg" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const plans = document.querySelector('.plans');
+            plans.scrollLeft = (plans.scrollWidth - plans.clientWidth) / 2;
+        });
+        </script>
 </body>
 </html>

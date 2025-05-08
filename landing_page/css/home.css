@@ -6,6 +6,7 @@
     --pink-color: #EF2A82;
     --blue-font-color: #172755;
     --line: #D3D9E9;
+    --blue-line: #2A407C;
 }
 
 header {
@@ -186,31 +187,32 @@ header {
 }
 
 .plans {
+    width: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 20px;
     margin-top: 50px;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    scroll-padding: 0 20px;
-    -webkit-overflow-scrolling: touch;
-    padding: 0 20px;
+    scroll-padding: 0 20%;
+}
+
+/* Adicione isto para elementos filhos */
+.plans > * {
+    scroll-snap-align: center;
+    flex-shrink: 0; /* Garante que os itens não encolham */
 }
 
 .cards {
     position: relative;
     display: flex;
+    text-align: center;
     flex-direction: column;
-    justify-content: center;
     width: 200px;
     height: 360px;
     background-color: var(--bg-white);
     border-radius: 30px;
     padding: 0 40px;
-    scroll-snap-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex-shrink: 0;
+    margin: 0 10px;
 }
 
 .head-line {
@@ -262,4 +264,23 @@ header {
     border-radius: 68px;
     margin-top: 35px;
     border: none;
+}
+
+.footer-content {
+    padding: 20px;
+}
+
+.footer-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+    margin-top: 50px;
+    height: 70px;
+    border-top: 1px solid var(--blue-line);
+}
+
+.icons-footer img{
+    margin-left: 50px;
 }
