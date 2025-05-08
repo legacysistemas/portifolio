@@ -150,3 +150,20 @@ header {
     display: flex;
     justify-content: center;
 }
+
+.last-content {
+    position: inherit;
+    height: 815px;
+    background-color: var(--bg);
+    clip-path: polygon(0% 11.25%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.last-fake-border {
+    position: absolute;
+    bottom: 16px;
+    height: 905px;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--pink-color);
+    clip-path: polygon(0% 11.25%, 100% 0%, 100% 100%, 0% 100%);
+}
