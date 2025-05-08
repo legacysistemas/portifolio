@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8F9FF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    height: 100dvh;
+    max-width: 100dvw;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+}

@@ -1,0 +1,152 @@
+:root {
+    --bg: #172755;
+    --primary-font-color: #fff;
+    --secondary-font-color: #8794BA;
+    --pink-color: #EF2A82;
+    --blue-font-color: #172755;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin: 0;
+    padding: 0 20px;
+    background-color: var(--bg);
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+.first-content {
+    position: inherit;
+    height: 815px;
+    background-color: var(--bg);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 88.5%, 0% 100%);
+}
+
+.fake-border {
+    position: absolute;
+    width: 100%;
+    height: 815px;
+    background-color: var(--pink-color);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 88.5%, 0% 100%);
+    top: 86px;
+    z-index: -1;
+}
+
+.graphics-image {
+    display: flex;
+    justify-content: center;
+}
+
+.graphics-image img{
+    margin-top: 29px;
+}
+
+.primary-text {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.primary-text h1{
+    color: var(--primary-font-color);
+    font-weight: bold;
+}
+
+.primary-text p{
+    color: var(--secondary-font-color)
+}
+
+.button-free {
+    display: flex;
+    justify-content: center;
+    margin-top: 29px;
+    padding: 0 20px;
+}
+
+.button-free button{
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-font-color);
+    background-color: var(--pink-color);
+    border-radius: 68px;
+    border: none;
+}
+
+.second-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 20px;
+
+}
+
+.secondary-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.second-content h1{
+    color: var(--blue-font-color);
+}
+
+.second-content p{
+    color: var(--secondary-font-color);
+}
+
+.third-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 20px;
+    gap: 50px;
+}
+
+.flex-content {
+    display: flex;
+    gap: 20px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.texts h2{
+    color: var(--blue-font-color);
+    font-size: 20px;
+}
+
+.texts p{
+    color: var(--secondary-font-color);
+    font-size: 14px;
+}
+
+.fourth-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.fourth-content h1{
+    color: var(--blue-font-color);
+}
+
+.fourth-content p{
+    color: var(--secondary-font-color);
+}
+
+.alert-icon {
+    display: flex;
+    justify-content: center;
+}
