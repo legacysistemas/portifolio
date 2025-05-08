@@ -378,6 +378,20 @@ nav ul li:hover{
     transform: scale(1.02);
 }
 
+.websites .preview3 {
+    width: 300px;
+    height: 350px;  
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.websites .preview3:hover {
+    transform: scale(1.02);
+}
+
 
 .websites .preview:hover {
     transform: scale(1.02);

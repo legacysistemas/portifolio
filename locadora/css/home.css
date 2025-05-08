@@ -71,14 +71,14 @@ body {
     display: flex;
     border-radius: 10px;
     margin-top: 20px;
-    color: var(--cor_texto);
+    color: #fff;
     transition: background-color 0.3s;
 }
 
 .sidebar ul li a:hover{
     background-color: var(--cor_secundaria);
     border-radius: 10px;
-    color: var(--cor_texto_primario);
+    color: #fff;
     fill: var(--cor_texto_primario);
     transition: background-color 0.3s;
 }
@@ -89,18 +89,18 @@ svg {
 }
 
 .sidebar ul li a:hover svg {
-    fill: var(--cor_texto_primario);
+    fill: #fff;
     transition: fill 0.3s;
 
 }
 
 .sidebar ul li a.active {
     background-color: var(--cor_secundaria);
-    color: var(--cor_texto_primario);
+    color: #fff;
 }
 
 .sidebar ul li a.active svg {
-    fill: var(--cor_texto_primario);
+    fill: #fff;
 }
 
 .footer {
