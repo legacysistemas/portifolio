@@ -100,12 +100,12 @@ nav ul li:hover{
 .first-content img {
     position: absolute;
     right: 0;
-    width: 16rem;
+    width: 14rem;
 }   
 
 .first-content .legacy {
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     margin: 25px 0;
 }
@@ -114,13 +114,13 @@ nav ul li:hover{
     color: #fff;
     font-size: 3rem;
     font-weight: 600;
-    margin: 25px 0;
+    margin: 1.5rem 0rem;
 }
 
 .first-content .text {
     width: 50%;
     color: #b1b1b1;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     margin: 25px 0;
     margin-bottom: 50px;
@@ -335,7 +335,6 @@ nav ul li:hover{
     gap: 5rem;
 }
 
-
 .websites .preview {
     width: 300px;
     height: 350px;  
@@ -480,4 +479,339 @@ footer {
     color: #b1b1b1;
     font-weight: 200;
     font-size: 12px;
+}
+
+/* smart phones */
+
+@media (max-width: 550px) {
+
+    .navbar{
+        display: none;
+    }
+
+    .first-content img {
+        top: 0;
+        width: 3rem;
+    }
+
+    .first-content .slogan {
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    .first-content .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content_btn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .budget{
+        text-align: center;
+    }
+
+    .services{
+        margin-bottom: 10%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .projects{
+        margin-bottom: 10%;
+    }
+
+    .projects p{
+        font-size: 1rem;
+    }
+
+    .websites {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .websites .preview {
+        width: 17rem;
+        height: 14rem;  
+    }
+
+    .websites .preview2 {
+        width: 17rem;
+        height: 14rem;  
+    }
+
+    .websites .preview3 {
+        width: 17rem;
+        height: 14rem;  
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+    .logo-legacy{
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-legacy{
+        display: none;
+    }
+
+    .nav-legacy-contatos {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .nav-legacy-contatos h1{
+        margin-top: 0;
+    }
+
+
+    
+}
+
+/* small tablets */
+
+@media (min-width: 550px) and (max-width: 799px) {
+    .first-content img {
+        top: 0;
+        width: 3rem;
+    }
+
+    .first-content .slogan {
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    .first-content .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content_btn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .budget{
+        text-align: center;
+    }
+
+    .services{
+        margin-bottom: 10%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .projects{
+        margin-bottom: 10%;
+    }
+
+    .projects p{
+        font-size: 1rem;
+    }
+
+    .websites {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .websites .preview {
+        width: 17rem;
+        height: 14rem;  
+    }
+
+    .websites .preview2 {
+        width: 17rem;
+        height: 14rem;  
+    }
+
+    .websites .preview3 {
+        width: 17rem;
+        height: 14rem;  
+    }
+}
+
+/* large tablets */
+
+@media (min-width: 800px) and (max-width: 900px) {
+    .first-content img {
+        top: 0;
+        width: 3rem;
+    }
+
+    .first-content .slogan {
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    .first-content .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content_btn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .budget{
+        text-align: center;
+    }
+
+    .services{
+        margin-bottom: 10%;
+    }
+
+    .cards {
+        
+        gap: 2rem;
+    }
+
+    .projects{
+        margin-bottom: 10%;
+    }
+
+    .projects p{
+        font-size: 1rem;
+    }
+
+    .websites {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .websites .preview {
+        width: 17rem;
+        height: 14rem;  
+    }
+
+    .websites .preview2 {
+        width: 17rem;
+        height: 14rem;  
+    }
+
+    .websites .preview3 {
+        width: 17rem;
+        height: 14rem;  
+    }
+}
+
+/* small screens */
+
+@media (min-width: 901px) and (max-width: 929px) {
+
+    .first-content img {
+        width: 8rem;
+        top: 0;
+    }
+
+    .first-content .slogan {
+        font-size: 3rem;
+    }
+
+    .cards {
+        gap: 3rem;
+    }
+
+    .websites {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 930px) and (max-width: 1000px) {
+    
+    .first-content img {
+        width: 8rem;
+        top: 0;
+    }
+
+    .first-content .slogan {
+        font-size: 2rem;
+    }
+
+    .cards {
+        gap: 3rem;
+    }
+
+    .websites {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+}
+
+@media (min-width: 1001px) and (max-width: 1190px) {
+
+    .first-content img {
+        width: 8rem;
+        top: 0;
+    }
+
+    .first-content .slogan {
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        gap: 3.3rem;
+    }
+
+    .websites {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+}
+
+
+@media (min-width: 1191px) and (max-width: 1370px) {
+    .first-content img {
+        width: 8rem;
+        top: 0;
+    }
+
+    .first-content .slogan {
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        gap: 3.3rem;
+    }
+
+    
 }
